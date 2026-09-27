@@ -1,7 +1,7 @@
 using APRComparator.Domain.Entities.Offers;
 using Xunit;
 
-namespace APRC.Tests.Domain;
+namespace APRC.Tests.Domain.Model.Offers;
 
 public class BankTests
 {

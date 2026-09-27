@@ -4,7 +4,7 @@
     <TargetFramework>net10.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
-    <RootNamespace>APRC.Domain.Model</RootNamespace>
+    <RootNamespace>APRC.Core.Domain.Model</RootNamespace>
   </PropertyGroup>
 
 </Project>

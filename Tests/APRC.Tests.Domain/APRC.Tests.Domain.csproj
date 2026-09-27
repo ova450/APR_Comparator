@@ -17,4 +17,9 @@
     <ProjectReference Include="..\..\src\Core\APRComparator.Domain\APRC.Domain.Model.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Model\CBR\" />
+    <Folder Include="Service\" />
+  </ItemGroup>
+
 </Project>

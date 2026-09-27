@@ -1,7 +1,4 @@
-using APRComparator.Domain.Common;
-using APRComparator.Domain.Entities.CBR;
-
-namespace APRComparator.Domain.Entities;
+namespace APRC.Domain.Model.CBR;
 
 /// <summary>
 /// Предельные/среднерыночные значения ПСК ЦБ РФ по категории на период.

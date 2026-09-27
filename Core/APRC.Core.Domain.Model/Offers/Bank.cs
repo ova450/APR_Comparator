@@ -1,6 +1,6 @@
 using APRComparator.Domain.Common;
 
-namespace APRComparator.Domain.Entities.Offers;
+namespace APRC.Domain.Model.Offers;
 
 /// <summary>
 /// Банк — источник кредитных предложений (Offers) и спредов (Spreads).

@@ -1,4 +1,4 @@
-﻿namespace APRC.Domain.Service
+﻿namespace APRC.Core.Domain.Service
 {
     public class Class1
     {

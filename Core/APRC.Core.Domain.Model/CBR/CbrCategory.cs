@@ -1,6 +1,6 @@
-using APRComparator.Domain.Common;
+using APRC.Domain.Model.Common;
 
-namespace APRComparator.Domain.Entities.CBR;
+namespace APRC.Domain.Model.CBR;
 
 /// <summary>
 /// Категория потребительского кредита, для которой ЦБ РФ публикует

@@ -1,6 +1,6 @@
 using APRComparator.Domain.Common;
 
-namespace APRComparator.Domain.Entities.Offers;
+namespace APRC.Domain.Model.Offers;
 
 /// <summary>
 /// Публичная оферта (кредитное предложение) банка.

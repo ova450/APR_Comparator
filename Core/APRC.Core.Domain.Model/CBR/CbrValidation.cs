@@ -1,6 +1,6 @@
 using APRComparator.Domain.Common;
 
-namespace APRComparator.Domain.Entities;
+namespace APRC.Domain.Model.CBR;
 
 /// <summary>
 /// Привязка предельных значений ЦБ к отчётному периоду (год/квартал) и статус проверки.

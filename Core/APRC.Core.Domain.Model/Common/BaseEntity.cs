@@ -1,4 +1,4 @@
-namespace APRComparator.Domain.Common;
+namespace APRC.Domain.Model.Common;
 
 /// <summary>
 /// Базовый класс для всех сущностей домена. Содержит суррогатный первичный ключ.
