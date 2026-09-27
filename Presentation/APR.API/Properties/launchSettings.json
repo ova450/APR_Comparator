@@ -1,0 +1,12 @@
+{
+  "profiles": {
+    "APRComparator.API": {
+      "commandName": "Project",
+      "launchBrowser": true,
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Development"
+      },
+      "applicationUrl": "https://localhost:48144;http://localhost:48145"
+    }
+  }
+}
