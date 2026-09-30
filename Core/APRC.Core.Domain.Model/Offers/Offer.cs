@@ -1,25 +1,20 @@
-using APRComparator.Domain.Common;
+using APRC.Core.Domain.FinStructure;
+using APRC.Core.SharedKernel.Abstractions;
 
-namespace APRC.Domain.Model.Offers;
+namespace APRC.Core.Domain.FinOffers;
 
 /// <summary>
-/// Публичная оферта (кредитное предложение) банка.
-/// Соответствует таблице Offers на ER-диаграмме.
+/// Оферты (кредитное предложение) кредитных организаций.
 /// </summary>
-public class Offer : BaseEntity
+public class Offer : EntityAbstract
 {
     public int BankId { get; set; }
-    public Bank Bank { get; set; } = null!;
-
+    public Category Bank { get; set; } = null!;
     public int LoanTerm { get; set; }
     public int PaymentPeriodsPerYear { get; set; }
-
-    // На диаграмме: AmountFinansed — исправлена опечатка в имени свойства домена
     public decimal AmountFinanced { get; set; }
     public decimal EquatedMonthlyInstallment { get; set; }
     public decimal CapitalizedFees { get; set; }
-
-    // На диаграмме: LoanCasnback — исправлена опечатка в имени свойства домена
     public decimal LoanCashback { get; set; }
 
     // TODO: уточнить допустимые значения — возможно, стоит заменить на enum

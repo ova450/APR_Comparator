@@ -1,12 +1,11 @@
-using APRComparator.Domain.Common;
+using APRC.Core.SharedKernel.Abstractions;
 
-namespace APRC.Domain.Model.Offers;
+namespace APRC.Core.Domain.FinOffers;
 
 /// <summary>
 /// Отметка о проверке актуальности публичной оферты на определённую дату.
-/// Соответствует таблице OfferValidates на ER-диаграмме.
 /// </summary>
-public class OfferValidation : BaseEntity
+public class OfferValidation : EntityAbstract
 {
     public int OfferId { get; set; }
     public Offer Offer { get; set; } = null!;

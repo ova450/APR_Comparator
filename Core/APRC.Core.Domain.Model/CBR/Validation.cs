@@ -1,15 +1,14 @@
-using APRComparator.Domain.Common;
+using APRC.Core.SharedKernel.Abstractions;
 
-namespace APRC.Domain.Model.CBR;
+namespace APRC.Core.Domain.CBR;
 
 /// <summary>
 /// Привязка предельных значений ЦБ к отчётному периоду (год/квартал) и статус проверки.
-/// Соответствует таблице CBR_validates на ER-диаграмме.
 /// </summary>
-public class CbrValidation : BaseEntity
+public class Validation : EntityAbstract
 {
     public int LimitId { get; set; }
-    public CbrLimit Limit { get; set; } = null!;
+    public Limit Limits { get; set; } = null!;
 
     public DateTime ValidateDate { get; set; }
     public int Year { get; set; }

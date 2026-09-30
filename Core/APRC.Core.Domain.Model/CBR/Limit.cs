@@ -1,13 +1,16 @@
-namespace APRC.Domain.Model.CBR;
+using APRC.Core.SharedKernel.Abstractions;
+
+namespace APRC.Core.Domain.CBR;
 
 /// <summary>
 /// Предельные/среднерыночные значения ПСК ЦБ РФ по категории на период.
-/// Соответствует таблице CBR_limits на ER-диаграмме.
 /// </summary>
-public class CbrLimit : BaseEntity
+public class Limit : EntityAbstract
 {
     public int CategoryId { get; set; }
-    public CbrCategory Category { get; set; } = null!;
+    public Category Category { get; set; } = null!;
+    public int BankCategoryId { get; set; }
+    public FinStructure.Category BankCategory { get; set; } = null!;
 
     public decimal LargeSumMinimum { get; set; }
     public decimal LargeSumAve { get; set; }
@@ -15,5 +18,5 @@ public class CbrLimit : BaseEntity
     public decimal SimAve { get; set; }
     public decimal SumMax { get; set; }
 
-    public ICollection<CbrValidation> Validations { get; set; } = new List<CbrValidation>();
+    public IList<Validation> Validations { get; set; } = [];
 }
