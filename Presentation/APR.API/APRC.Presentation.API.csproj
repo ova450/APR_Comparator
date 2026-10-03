@@ -13,6 +13,8 @@
 
   <ItemGroup>
     <ProjectReference Include="..\..\Core\APRC.Core.AppService\APRC.Core.AppService.csproj" />
+    <ProjectReference Include="..\..\Core\APRC.Core.Domain.Model\APRC.Core.Domain.Model.csproj" />
+    <ProjectReference Include="..\..\Core\APRC.Core.Domain.Service\APRC.Core.Domain.Service.csproj" />
     <ProjectReference Include="..\..\Infrastructure\APRC.Infrastructure\APRC.Infrastructure.csproj" />
   </ItemGroup>
 

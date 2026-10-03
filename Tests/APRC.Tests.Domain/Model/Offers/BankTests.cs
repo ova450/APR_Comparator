@@ -3,12 +3,13 @@ using Xunit;
 
 namespace APRC.Tests.Domain.Model.Offers;
 
+// Todo: проверить и исправить!
 public class BankTests
 {
     [Fact]
     public void NewBank_HasEmptyCollections()
     {
-        var bank = new Categories { Name = "Test Bank" };
+        var bank = new Bank { Name = "Test Bank" };
 
         Assert.Empty(bank.Offers);
         Assert.Empty(bank.Spreads);

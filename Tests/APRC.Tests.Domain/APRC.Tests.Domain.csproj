@@ -17,12 +17,12 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\Core\APRC.Core.Domain\APRC.Core.Domain.Model.csproj" />
+    <Folder Include="Model\CBR\" />
+    <Folder Include="Service\" />
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Model\CBR\" />
-    <Folder Include="Service\" />
+    <ProjectReference Include="..\..\Core\APRC.Core.Domain.Model\APRC.Core.Domain.Model.csproj" />
   </ItemGroup>
 
 </Project>

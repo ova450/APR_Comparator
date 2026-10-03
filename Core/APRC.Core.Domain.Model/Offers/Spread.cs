@@ -1,20 +1,18 @@
-using APRC.Core.Domain.FinStructure;
 using APRC.Core.SharedKernel.Abstractions;
+using System.ComponentModel.DataAnnotations.Schema;
 
-namespace APRC.Core.Domain.FinOffers;
+namespace APRC.Core.Domain.Model.Offers;
 
 /// <summary>
-/// Диапазон ставок (спред) банка на определённую дату.
-/// Соответствует таблице Spreads на ER-диаграмме.
+/// Текущий диапазон ставок (спред) банка.
 /// </summary>
-public class Spread : EntityAbstract
+public class Spread : EntityBaseAbstract
 {
     public int BankId { get; set; }
-    public Category Bank { get; set; } = null!;
+    public Bank Bank { get; set; } = null!;
 
-    public DateTime Date { get; set; }
-    public decimal Min { get; set; }
-    public decimal Max { get; set; }
+    [Column(TypeName = "decimal(18,2)")] public decimal Min { get; set; }   // минимальная ставка, предлагаемая банком в процентах
+    [Column(TypeName = "decimal(18,2)")] public decimal Max { get; set; }   // максимальная ставка, предлагаемая банком в процентах
 
-    public ICollection<SpreadValidation> Validations { get; set; } = [];
+    public DateTime DateFrom { get; set; }
 }

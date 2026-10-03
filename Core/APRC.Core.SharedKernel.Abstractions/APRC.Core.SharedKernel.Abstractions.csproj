@@ -7,7 +7,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Compile Remove="ContextAbstractOnCreating.cs" />
+    <None Remove="EntityAbstract.cs~RF38a23736.TMP" />
   </ItemGroup>
 
   <ItemGroup>
